@@ -1,8 +1,20 @@
 'use strict';
 
+const isLocalhost = Boolean(
+    window.location.hostname === 'localhost' ||
+      // [::1] is the IPv6 localhost address.
+      window.location.hostname === '[::1]' ||
+      // 127.0.0.0/8 are considered localhost for IPv4.
+      window.location.hostname.match(
+        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+      )
+  );
+
+  const url = (isLocalhost) ? "/chat/chatHead.html" : "/chat_poc/chat/chatHead.html"
+
 console.log("Chat Application");
 var ajax = new XMLHttpRequest();
-ajax.open("GET", "/chat/chatHead.html", false);
+ajax.open("GET", url, false);
 ajax.send();
 document.body.innerHTML += ajax.responseText;
 
