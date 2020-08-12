@@ -74,13 +74,13 @@ let userChatData = [
 function printChat(){
     
     let chatView = document.getElementById("messages");
-    let innerHTML = "";
+    let htmlData = "";
 
     for(let obj of userChatData){
-        innerHTML += "<p><b>"+obj.name+" </b>"+ obj.message +"</p>";
+        htmlData += "<p><b>"+obj.name+" </b>"+ obj.message +"</p>";
     }
 
-    chatView.innerHTML = innerHTML;
+    chatView.innerHTML = htmlData;
     
 }
 printChat();
