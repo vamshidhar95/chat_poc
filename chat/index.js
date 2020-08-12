@@ -10,18 +10,18 @@ const isLocalhost = Boolean(
       )
   );
 
-  const url = (isLocalhost) ? "/chat/chatHead.html" : "/chat_poc/chat/chatHead.html"
+  const chatHeadUrl = (isLocalhost) ? "/chat/chatHead.html" : "/chat_poc/chat/chatHead.html"
 
 console.log("Chat Application");
 var ajax = new XMLHttpRequest();
-ajax.open("GET", url, false);
+ajax.open("GET", chatHeadUrl, false);
 ajax.send();
 document.body.innerHTML += ajax.responseText;
 
 
 // Get Domain name 
-const url = window.location.href.split("/");
-const domain = url[2];
+const pageUrl = window.location.href.split("/");
+const domain = pageUrl[2];
 
 
 // Setting the expiry of Cookie
