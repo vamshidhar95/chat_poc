@@ -73,40 +73,76 @@ body{
     font-size: 18px;
 }
 
-.chat-div{
+.open-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    background-color: #555;
+    color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  /* opacity: 0.8; */
+}
+.cancel{
+    width: 100%;
+    border: none;
+    cursor: pointer ;
+    opacity: 0.8;
+    padding: 13px 20px;
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+}
+
+#chat-div{
+    display: none;
     position: fixed;
     bottom: 0px;
     right: 0px;
     margin: 20px;
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    width: 40%;
+    border: 3px solid #f1f1f1;
+    /* border-radius: 5px; */
+    width: 30%;
     padding: 10px;
+    z-index: 1;
     height: fit-content;
-    background-color: slategray;
-    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+    background-color: #fff;
+    box-shadow: 0px 0px 8px -3px rgba(0,0,0,0.75);
+}
+.chat-header{
+    padding: 20px;
+    padding-left: 0;
+}
+.chat-header h4{
+    font-size: 20px;
+    margin: 0px;
 }
 
 .chat-container{
-    border: 1px solid #555;
-    border-radius: 5px;
+    border: none;
+    /* border-radius: 5px; */
     /* padding: 5px; */
     height: 200px;
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
 }
 .chat-view{
+    padding: 10px;
     flex: 1;
-    border: 1px solid #555;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     height: 170px;
-    background-color: ivory;
+    border: none;
+    background: #f1f1f1;
     overflow: auto;
     scrollbar-width: unset;
-    /* overflow-y: scroll; */
-    /* display: flex; */
-    /* flex-direction: column; */
+
 }
 hr{
     color: #888;
@@ -114,19 +150,31 @@ hr{
     background-color: #888;
 }
 .text-input-container{
-    /* border: 1px solid; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     margin: 0px;
+    margin-top: 10px;
+    height: 40px;
 }
 
 
 .text-input-container input{
-    padding: 4px;
-    border-radius: 5px;
-    background-color: ivory;
-    width: 200px;
+    /* padding: 4px; */
+    border: 1px solid grey;
+    /* border-radius: 5px; */
+    background-color: #fff;
+    width: 85%;
+    height: 90%;
+}
+.clear-btn{
+    width: 15%;
+    height: 100%;
+    border: 1px solid grey;
+    background-color: #1ab9ff;
+
+    /* opacity: .8 ; */
+
 }

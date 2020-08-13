@@ -120,8 +120,11 @@ function checkForCookies() {
 
         });
 
-        if(userMessage != "")
+        if(userMessage != ""){
             textInput.value = userMessage;
+            document.getElementById("chat-div").style.display = "block";
+        }
+            
     }
     
 }
@@ -146,6 +149,14 @@ function clearInput(){
     textInput.value = "";
     document.cookie = 'user_input=; path=/';
 
+}
+
+function openchat(){
+    document.getElementById("chat-div").style.display = "block";
+}
+
+function closechat(){
+    document.getElementById("chat-div").style.display = "none";
 }
 
 
