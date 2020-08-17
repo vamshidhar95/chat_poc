@@ -10,11 +10,7 @@ const isLocalhost = Boolean(
       )
   );
 
-//   const chatHeadUrl = (isLocalhost) ? "/chat/chatHead.html" : "/chat_poc/chat/chatHead.html"
-
-// const chatHeadUrl = "http://127.0.0.1:5500/chat/chatHead.html";
-
-const chatHeadUrl = "/chat/chatHead.html";
+const chatHeadUrl = (isLocalhost) ? "/chat/chatHead.html" : "/chat_poc/chat/chatHead.html"
 
 console.log("Chat Application");
 var ajax = new XMLHttpRequest();
