@@ -124,7 +124,7 @@ body{
     border: none;
     /* border-radius: 5px; */
     /* padding: 5px; */
-    height: 200px;
+    height: 250px;
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -142,6 +142,16 @@ body{
     background: #f1f1f1;
     overflow: auto;
     scrollbar-width: unset;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.my-chat{
+    text-align: right;
+    width: 80%;
+    align-self: flex-end;
+}
+.client-chat{
 
 }
 hr{

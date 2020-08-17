@@ -1,0 +1,27 @@
+{
+  "name": "chat_poc",
+  "version": "1.0.0",
+  "description": "This repo is intended for R&D work for a Chat Widget.",
+  "main": "test.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vamshidhar95/chat_poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vamshidhar95/chat_poc/issues"
+  },
+  "homepage": "https://github.com/vamshidhar95/chat_poc#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
